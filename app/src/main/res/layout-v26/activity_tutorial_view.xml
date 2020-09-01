@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tutorial_viewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="CODE:"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="10dp"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtcode"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textIsSelectable="true"
+                    android:textStyle="normal"
+                    android:textColor="#250E4E"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="40dp"
+             android:src="@drawable/ic_share_24"
+             android:layout_gravity="center_horizontal"
+             android:layout_margin="20dp"
+             android:tooltipText="share"
+            android:background="@drawable/round"
+             />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Output/Topics:"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/txtdpic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="DESCRIPTION:"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/txtdes"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#160A2C"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
